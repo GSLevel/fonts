@@ -1,10 +1,9 @@
 @font-face {
-  font-family: main;
-  src: url(https://gslevel.github.io/fonts/Transat.ttf)
+  font-family: gamefont;
+  src: url(https://gslevel.github.io/fonts/Tahoma.ttf)
 }
 
 * {
- font-family: main;
   font-weight: bold;
   font-size: 30px
 }
