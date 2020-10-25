@@ -1,0 +1,8 @@
+@font-face {
+  font-family: main;
+  src: url(https://gslevel.github.io/fonts/Transat.ttf)
+}
+
+* {
+ font-family: main!important;
+}
