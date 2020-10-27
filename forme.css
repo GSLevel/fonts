@@ -2,3 +2,61 @@
     font-family: gamefont;
     src: url(https://reizu.moe/fonts/Renogare.ttf)
 }
+
+#voiceDisplay {
+    opacity: .5;
+    z-index: 2;
+    position: absolute;
+    bottom: 18px;
+    left: 303px;
+    display: none!important;
+}
+
+#uiBase.onMenu #voiceDisplay {
+    left: 750px;
+    display: none!important
+}
+
+#chatHolder {
+    position: absolute;
+    z-index: 1000;
+    width: 280px;
+    bottom: 20px;
+    left: 20px;
+    transition: all 0.5s linear;
+}
+
+#uiBase.onMenu #chatHolder {
+    left: 150px
+}
+
+#chatInput {
+    width: 500px;
+    padding: 5px;
+    padding-left: 50px;
+    color: #ffa000;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(0 0 0 / 32%);
+    pointer-events: all;
+    margin-left: 20px;
+    text-align: center;
+    height: 70px;
+}
+
+#chatInput::placeholder {
+    color: rgba(232, 255, 0, 0.7);
+}
+
+#chatList {
+    overflow-y: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 999999;
+    pointer-events: all;
+    position: relative;
+    direction: rtl;
+    text-align: center;
+    width: 500px;
+}
