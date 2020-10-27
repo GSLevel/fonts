@@ -143,3 +143,7 @@
 #chatList {
     width: 300px!important
 }
+
+#mainLogo {
+    content: url(https://cdn.discordapp.com/attachments/699663156011729023/761604506475167744/logo_4.png)
+}
