@@ -60,3 +60,30 @@
     text-align: center;
     width: 500px;
 }
+
+.material-icons {
+    background: -webkit-linear-gradient(40deg, rgba(255,226,0,1) 0%, rgba(255,64,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#leaderDisplay {
+    text-align: left;
+    float: right;
+    width: 310px;
+    z-index: 3;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(255, 113, 0, 0.7);
+    font-size: 23px;
+    background-color: #ff710000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-shadow: 1px 0px 5px black;
+}
+
+#leaderContainer {
+    text-align: left;
+    color: #ff8900;
+}
