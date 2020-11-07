@@ -1,3 +1,6 @@
+/* Updated on 7.11.2020 dd.mm.yy */
+
+
 @font-face {
     font-family: gamefont;
     src: url(https://reizu.moe/fonts/Renogare.ttf)
@@ -146,4 +149,8 @@
 
 #mainLogo {
     content: url(https://cdn.discordapp.com/attachments/699663156011729023/761604506475167744/logo_4.png)
+}
+
+#ot-sdk-btn-floating.ot-floating-button {
+    display: none;
 }
