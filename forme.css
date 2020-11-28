@@ -1,4 +1,4 @@
-/* Updated on 7.11.2020 dd.mm.yy */
+/* Updated on 28.11.2020 dd.mm.yy */
 
 
 @font-face {
@@ -97,13 +97,11 @@
 
 #healthValue {
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     will-change: transform;
-    display: flex;
-    top: -240px;
+    display: inline-block;
+    top: 57px;
     position: relative;
-    flex-direction: column;
-    z-index: 9999999999
 }
 
 #maxHP {
@@ -111,11 +109,8 @@
 }
 
 #healthBar {
-    display: flex;
-    height: 200px;
-    flex-direction: column;
-    bottom: 450px;
-    position: relative
+    display: inline-block;
+    height: 50px;
 }
 
 .healthBarSeg {
@@ -123,8 +118,8 @@
     display: inline-table;
     border-radius: 0px;
     height: 100%;
-    margin-right: 0px;
-   background: transparent;
+    margin-right: -1px;
+
 }
 
 .hpBSeg {
@@ -132,7 +127,8 @@
     display: inline-block;
     border-radius: 0px;
     height: 100%;
-    box-shadow: 0 0 transparent
+    box-shadow: 0 0 transparent;
+    margin-right: -1px
 }
 
 #healthValueHolder {
