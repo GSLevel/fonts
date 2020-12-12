@@ -1,4 +1,4 @@
-/* Updated on 5.12.2020 dd.mm.yy */
+/* Updated on 12.12.2020 dd.mm.yy */
 
 
 @font-face {
@@ -153,4 +153,106 @@
 
 #clientExit {
   display: none;
+}
+
+#menuRegionLabel::before {
+    content: "Region:"
+}
+
+#menuFPSDisplay {
+    display: none!important
+}
+
+#menuFPS span{
+    display: block!important
+}
+
+
+#braveWarning {
+    visibility: hidden;
+}
+
+#braveWarning::before {
+    visibility: visible;
+    content: "Sub to GS Level and follow LevelTTV";
+}
+
+
+#mLevelCont {
+    background-color: transparent;
+    top: 60px;
+    position: absolute;
+    left: 26%!important
+}
+
+#signedInHeaderBar {
+    left: 40%
+}
+
+#mainLogo {
+    display: none;
+}
+
+#seasonLabel {
+    display: none;
+}
+
+#mLevelCont:before {
+    content: "Level: "
+}
+
+#ot-sdk-btn-floating .ot-floating-button__front, #ot-sdk-btn-floating .ot-floating-button__back {
+    display: none;
+}
+
+a {
+    color: orangered!important
+}
+
+.progressBarInner {
+    background-color: orangered
+}
+
+.menuItem {
+    padding-top: 5px!important;
+    padding-bottom: 1px!important;
+    padding-left: 22px!important;
+    padding-right: 22px!important;
+    font-size: 22px!important;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-shadow: -1px -1px 0 #202020,1px -1px 0 #202020,-1px 1px 0 #202020,1px 1px 0 #202020,-2px -2px 0 #202020,2px -2px 0 #202020,-2px 2px 0 #202020,2px 2px 0 #202020,-3px -3px 0 #202020,3px -3px 0 #202020,-3px 3px 0 #202020,3px 3px 0 #202020!important;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 18px;
+    padding-top: 14px;
+    margin-bottom: 7px;
+    background-color: #ff5e00;
+    box-shadow: inset 0 -7px 0 0 #ff4100;
+    text-align: center;
+    color: #fff;
+    text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020;
+    pointer-events: all;
+    cursor: pointer;
+    -webkit-transition: all .1s;
+    transition: all .1s;
+    top: -30px
+}
+
+.menuItemIcon {
+    display: none
+}
+
+.menuItem:hover, .button:hover {
+    background-color: yellow!important;
+    border: none;
+    box-shadow: inset 0 -7px 0 0 #ffc300!important;
+    -webkit-transform: scale(.95);
+    transform: scale(.95)
+}
+
+.button {
+    background-color: #ff5e00!important;
+    box-shadow: inset 0 -7px 0 0 #ff4100!important;
 }
