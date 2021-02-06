@@ -257,6 +257,55 @@ a {
     box-shadow: inset 0 -7px 0 0 #ff4100!important;
 }
 
-#streamContainer {
-  display: none!important;
+#signedInHeaderBar::after {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  position: relative;
+  top: 60px;
+  left: 150px;
+  color: orangered;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+    content: "touch_app";
+    cursor: pointer
+}
+
+ #signedInHeaderBar {
+    top: -110px;
+    transition: top .3s linear
+}
+
+#signedInHeaderBar:hover {
+    top: 0px
+} 
+
+.progressBar {
+    position: relative;
+    top: 15px
+}
+
+#mailIcon {
+    position:relative;
+    left: 70px
+}
+
+.krInfo {
+    position:relative;
+    left: 30px
+}
+
+#signedInHeaderBar > div:nth-child(4)  {
+    position:relative;
+    left: 40px
+}
+
+#signedInHeaderBar > div:nth-child(2) {
+        position:relative;
+    left: 20px
 }
