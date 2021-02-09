@@ -6,6 +6,10 @@
     src: url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAksCUYevI.woff2);
 }
 
+* {
+ font-weight: bold;
+}
+
 #voiceDisplay {
     opacity: .5;
     z-index: 2;
