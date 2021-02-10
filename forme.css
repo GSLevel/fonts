@@ -313,3 +313,44 @@ a {
         position:relative;
     left: 20px
 }
+
+.imageButton, #editorBtnM {
+    display:none!important;
+}
+
+#headerRight {
+    background: transparent;
+}
+
+#classPreviewCanvas {
+    position: relative;
+    left: -1200px;
+    top: 490px
+}
+
+.accountInput {
+    text-align: center;
+    width: 350px
+}
+#accPass, .accountButton {
+    background-color: orangered;
+}
+
+#accName {
+    background-color: orangered;
+}
+
+#accName:focus, #accPass:focus {
+    background-color: yellow;
+    transition: background-color .4s linear
+}
+
+#menuWindow {
+    background-color: transparent;
+    box-shadow: transparent 0 0
+}
+
+#accResp, #accResp span {
+    color: orangered!important;
+    text-align: center
+}
