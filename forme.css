@@ -601,9 +601,9 @@ div[style="display:inline-block;vertical-align:top;width:560px;margin-left:10px"
   width: 60px;
   padding-left: 0px;
   border-radius: 90px;
-  background-color: yellow
+  background-color: #802900
 }
 
 input:checked+.slider {
-  background-color: #802900
+  background-color: yellow
 }
