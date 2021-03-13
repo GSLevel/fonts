@@ -475,3 +475,135 @@ a {
     background-color: orangered;
     height: 50px
 }
+
+
+.classCard{
+background: orangered;
+border-radius: 40px
+}
+
+.strmCat, #youNewDiv {
+    display: none;
+}
+
+@keyframes open {
+    from {
+        filter: blur(900px)
+    }
+
+    to {
+        filter: blur(-9999px)
+    }
+}
+
+#menuWindow {
+    animation: open linear .2s;
+    width: 1400px!important
+}
+
+#chatUI {
+    top: 800px!important;
+    position: relative;
+    left: 1680px;
+}
+
+#chatList {
+    height: 500px!important
+}
+
+.sliderSml, #spectButton span {
+    visibility: hidden!important
+}
+
+.sliderSml::after {
+    visibility: visible;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  content: "preview";
+  color: orangered;
+  font-size: 100px;
+  bottom: 60px;
+  right: 70px;
+  position: relative
+}
+
+div[style="display:inline-block;vertical-align:top;width:560px;margin-left:10px"] {
+  left: 300px;
+  position: relative
+}
+
+.xpBarB {
+  background: orangered!important
+}
+
+.settingsBtn {
+  color: orange!important;
+  background: orangered
+}
+.slider::before {
+  visibility: hidden;
+}
+
+.slider::after {
+  visibility: visible;
+      visibility: visible;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  content: "power_settings_new";
+  color: orangered;
+  font-size: 37px;
+  left: 12px;
+  bottom: 2px;
+  position: relative
+}
+
+.slider {
+  width: 60px;
+  padding-left: 0px;
+  border-radius: 90px;
+  background-color: yellow
+}
+
+input:checked+.slider {
+  background-color: #802900
+}
