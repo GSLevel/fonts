@@ -1,4 +1,4 @@
-/* Updated on 13.03.2020 dd.mm.yy */
+/* Updated on 18.03.2020 dd.mm.yy */
 
 
 @font-face {
@@ -436,7 +436,7 @@ a {
 }
 
 #policeButton::after {
-    content: "Call KPD";
+    content: "KPD";
     font-size: 30px;
     animation: policeAnim 1s linear infinite
 }
@@ -488,11 +488,11 @@ border-radius: 40px
 
 @keyframes open {
     from {
-        filter: blur(900px)
+      left: -800px!important
     }
 
     to {
-        filter: blur(-9999px)
+        left: 50%!important
     }
 }
 
