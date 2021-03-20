@@ -1,10 +1,11 @@
 /* Updated on 20.03.2020 dd.mm.yy */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap)
 
 @font-face {
- font-family: gamefont;
- src: url(https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Regular.ttf);
+    font-family: gamefont;
+    src: url(https://gslevel.github.io/Poppins-Regular.ttf)
+    font-weight: 700;
 }
 
 * {
