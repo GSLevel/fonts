@@ -1,15 +1,22 @@
-/* Updated on 20.03.2020 dd.mm.yy */
+/* Updated on 21.03.2020 dd.mm.yy */
 
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
+
+#instructions::after {
+  content: " FOR THE BEST RESULTS, USE UI SCALE 0.7 (FULLSCREEN)";
+  position: relative;
+  color: orangered;
+  bottom: -50px;
+  right: 500px
+}
+
+#instructions {
+  left: 70%;
+  animation: none;
+}
 
 @font-face {
     font-family: gamefont;
     src: url(https://gslevel.github.io/Poppins-ExtraBold.ttf);
-}
-
-* {
- font-family: 'Poppins';
- font-weight: 700;
 }
 
 #voiceDisplay {
@@ -78,7 +85,6 @@
 
 #leaderDisplay {
     text-align: left;
-    float: right;
     width: 310px;
     z-index: 3;
     padding: 10px;
@@ -86,10 +92,54 @@
     padding-right: 20px;
     color: rgba(255, 113, 0, 0.7);
     font-size: 23px;
-    background-color: #ff7100b3;
-    border-radius: 90px;
+    border-radius: 10px;
     margin-bottom: 10px;
     text-shadow: 1px 0px 5px black;
+    border: orangered 3px solid;
+    background: transparent;
+    right: 50%;
+    transform: translate(50%);
+    position: fixed;
+    box-shadow: #f1ff00 3px 3px 0px 3px
+}
+
+#timerDisplay {
+    right: 56%;
+    transform: translate(-30%);
+    bottom: 89%;
+    position: fixed;
+}
+
+#timerVal {
+  font-size: 60px;
+  color: orangered;
+  text-shadow: #f1ff00 4px 4px
+}
+
+#fpsDisplay {
+    right: 30%;
+    transform: translate(-40%);
+    bottom: 92%;
+    position: fixed;
+    visibility: hidden;
+    text-shadow: #f1ff00 4px 4px
+}
+
+#ingameFPS {
+  visibility: visible!important;
+  color: orangered!important;
+  font-size: 50px
+}
+
+#pingDisplay::before {
+  content: "your ping is "
+}
+
+#leaderDisplay::before {
+  content: "Leaderboard";
+  color: orangered;
+  left: 23%;
+  position: relative
 }
 
 #timerIcon, #pingIcon {
@@ -150,11 +200,24 @@
 }
 
 #chatInput {
-    width: 300px!important
+    width: 400px!important;
+    border-radius: 40px;
+    border: orangered 4px solid;
+    background: #00000029;
+    transition: .7s linear
+}
+
+#chatInput:focus {
+  border: yellow 4px solid;
+  transition: .7s linear
+}
+
+::placeholder {
+  color: orangered!important
 }
 
 #chatList {
-    width: 300px!important
+    width: 400px!important
 }
 
 #mainLogo {
@@ -492,7 +555,7 @@ background: orangered;
 border-radius: 40px
 }
 
-.strmCat, #youNewDiv {
+#youNewDiv {
     display: none;
 }
 
@@ -541,6 +604,38 @@ border-radius: 40px
   font-feature-settings: 'liga';
   content: "preview";
   color: orangered;
+  font-size: 100px;
+  bottom: 60px;
+  right: 70px;
+  position: relative
+}
+
+.sliderSml:focus {
+    visibility: visible;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  content: "preview";
+  color: #f7ff00;
   font-size: 100px;
   bottom: 60px;
   right: 70px;
@@ -606,4 +701,8 @@ div[style="display:inline-block;vertical-align:top;width:560px;margin-left:10px"
 
 input:checked+.slider {
   background-color: yellow
+}
+
+#streamContainer {
+  display: none;
 }
