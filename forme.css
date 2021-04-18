@@ -1,4 +1,4 @@
-/* Updated on 21.03.2020 dd.mm.yy */
+/* Updated on 18.04.2020 dd.mm.yy */
 
 
 #instructions::after {
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: gamefont;
-    src: url(https://gslevel.github.io/Poppins-ExtraBold.ttf);
+    src: url(https://gslevel.github.io/fonts/MilkyNice.ttf);
 }
 
 #voiceDisplay {
