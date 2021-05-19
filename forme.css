@@ -1,6 +1,24 @@
 /* Updated on 19.05.2020 dd.mm.yy */
 
-@import url(https://gslevel.github.io/fonts/changelog.css)
+.mailObj::before {
+    content: "latest level's css update: cleaned stuff up a bit, added a better spectate icon"
+}
+
+.shopCard {
+  border-radius: 20px;
+  border: none!important;
+  transition: all .5s
+}
+
+.shopCard:hover {
+  transform: scale(.9)
+}
+
+.polApplc {
+  border: none;
+  color: orangered;
+  border-radius: 20px;
+}
 
 #instructions {
   animation: none;
@@ -251,12 +269,7 @@
 
 
 #braveWarning {
-    visibility: hidden;
-}
-
-#braveWarning::before {
-    visibility: visible;
-    content: "Sub to GS Level and follow LevelTTV";
+    display: none!important;
 }
 
 
@@ -466,11 +479,12 @@ a {
 }
 
 #menuClassNameTag {
-    position: relative;
-    right: 800px;
-    font-size: 70px;
-    top: -300px;
-    width: 900px
+    position: fixed;
+    left: -110%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    margin-top: unset;
+    font-size: 60px;
 }
 
 .menuClassPlayerPremium, .menuClassPlayerVerified {
@@ -478,8 +492,8 @@ a {
 }
 
 #classPreviewCanvas {
-    top: 430px!important;
-    left: -1100px!important
+    top: 650px!important;
+    left: -1100px!important;
 }
 
 #bubbleContainer {
