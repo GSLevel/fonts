@@ -1,7 +1,7 @@
-/* Updated on 19.05.2020 dd.mm.yy */
+/* Updated on 21.05.2021 dd.mm.yy */
 
 .mailObj::before {
-    content: "latest level's css update: cleaned stuff up a bit, added a better spectate icon"
+    content: "[19/5/2021] latest level's css update: cleaned stuff up a bit, added a better spectate icon. [21/5/2021] Added a new menu window animation"
 }
 
 .shopCard {
@@ -584,19 +584,20 @@ border-radius: 40px
     display: none;
 }
 
-@keyframes open {
+#menuWindow {
+    animation: windowAnim .7s linear
+}
+
+@keyframes windowAnim {
     from {
-      left: -800px
+        clip-path: ellipse(0px 0px);
+        filter: opacity(0)
     }
 
     to {
-        left: 50%
+        clip-path: ellipse(1000px 1000px);
+        filter: opacity(100)
     }
-}
-
-#menuWindow {
-    animation: open linear .2s;
-    width: 1400px!important
 }
 
 .sliderSml, #spectButton span {
