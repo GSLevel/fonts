@@ -1,13 +1,17 @@
 /* Updated on 22.05.2021 dd.mm.yy */
 
-.mailObj::before {
-    content: "[19/5/2021] cleaned stuff up a bit, added a better spectate icon. [21/5/2021] Added a new menu window animation. [22/5/2021] Removed the 'Skin': and 'Class': text, added a hover animation to the spectate icon, make the click to play text orange and smaller"
+#mailList > div:nth-child(1)::before {
+    content: "[19/5/2021] cleaned stuff up a bit, added a better spectate icon. [21/5/2021] Added a new menu window animation. [22/5/2021] Removed the 'Skin': and 'Class': text, added a hover animation to the spectate icon, make the click to play text orange and smaller, made the left menu buttons a circle, customized the chat a bit, fixed the changelog showing in other places (i think)"
 }
 
 .shopCard {
   border-radius: 20px;
   border: none!important;
   transition: all .5s
+}
+
+input {
+    color: orange!important
 }
 
 .shopCard:hover {
@@ -330,6 +334,7 @@ a {
     -webkit-transition: all .1s;
     transition: all .1s;
     top: -30px;
+    clip-path: ellipse(60px 60px)!important
 }
 
 .menuItemIcon {
@@ -340,7 +345,7 @@ a {
     background-color: yellow!important;
     border: none;
     box-shadow: inset 0 -7px 0 0 #ffc300!important;
-    -webkit-transform: scale(.95)!important
+    -webkit-transform: scale(.95)!important;
     transform: scale(.95)!important
 }
 
@@ -701,4 +706,11 @@ input:checked+.slider {
 
 #headerRight > div.verticalSeparator {
     display: none;
+}
+
+#chatList {
+    text-align: end;
+    clip-path: polygon(0 0, 85% 8%, 100% 100%, 0% 100%);
+    background-color: #ff45003d;
+    top: -20px
 }
