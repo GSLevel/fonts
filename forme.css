@@ -1,7 +1,7 @@
-/* Updated on 21.05.2021 dd.mm.yy */
+/* Updated on 22.05.2021 dd.mm.yy */
 
 .mailObj::before {
-    content: "[19/5/2021] cleaned stuff up a bit, added a better spectate icon. [21/5/2021] Added a new menu window animation"
+    content: "[19/5/2021] cleaned stuff up a bit, added a better spectate icon. [21/5/2021] Added a new menu window animation. [22/5/2021] Removed the 'Skin': and 'Class': text, added a hover animation to the spectate icon, make the click to play text orange and smaller"
 }
 
 .shopCard {
@@ -243,10 +243,6 @@
     width: 400px!important
 }
 
-#mainLogo {
-    content: url(https://cdn.discordapp.com/attachments/699663156011729023/761604506475167744/logo_4.png)
-}
-
 #ot-sdk-btn-floating.ot-floating-button {
     display: none;
 }
@@ -333,7 +329,7 @@ a {
     cursor: pointer;
     -webkit-transition: all .1s;
     transition: all .1s;
-    top: -30px
+    top: -30px;
 }
 
 .menuItemIcon {
@@ -344,8 +340,8 @@ a {
     background-color: yellow!important;
     border: none;
     box-shadow: inset 0 -7px 0 0 #ffc300!important;
-    -webkit-transform: scale(.95);
-    transform: scale(.95)
+    -webkit-transform: scale(.95) skew(-4deg, -10deg);!important
+    transform: scale(.95) skew(-4deg, -10deg);!important
 }
 
 .button {
@@ -461,14 +457,6 @@ a {
     right: 1600px;
     font-size: 70px;
     top: 550px
-}
-
-#menuClassSubtext::before {
-    content: "Skin: "
-}
-
-#menuClassName::before {
-    content: "Class: "
 }
 
 #menuClassName {
@@ -633,39 +621,8 @@ border-radius: 40px
   font-size: 100px;
   bottom: 60px;
   right: 70px;
-  position: relative
-}
-
-.sliderSml:focus {
-    visibility: visible;
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-  content: "preview";
-  color: #f7ff00;
-  font-size: 100px;
-  bottom: 60px;
-  right: 70px;
-  position: relative
+  position: relative;
+  transition: .5s linear
 }
 
 div[style="display:inline-block;vertical-align:top;width:560px;margin-left:10px"] {
@@ -731,4 +688,17 @@ input:checked+.slider {
 
 #streamContainer {
   display: none;
+}
+
+#instructions {
+    font-size: 15px;
+    color: #ff450099;
+}
+
+.sliderSml:hover::after{
+    color: yellow;
+}
+
+#headerRight > div.verticalSeparator {
+    display: none;
 }
