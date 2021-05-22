@@ -340,8 +340,8 @@ a {
     background-color: yellow!important;
     border: none;
     box-shadow: inset 0 -7px 0 0 #ffc300!important;
-    -webkit-transform: scale(.95) skew(-4deg, -10deg);!important
-    transform: scale(.95) skew(-4deg, -10deg);!important
+    -webkit-transform: scale(.95)!important
+    transform: scale(.95)!important
 }
 
 .button {
@@ -454,14 +454,14 @@ a {
 
 #menuClassSubtext {
     position: relative;
-    right: 1600px;
+    right: 1550px;
     font-size: 70px;
     top: 550px
 }
 
 #menuClassName {
     position: relative;
-    right: 700px;
+    right: 800px;
     font-size: 70px;
     top: 470px
 }
