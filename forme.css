@@ -1,7 +1,6 @@
-/* Updated on 22.05.2021 dd.mm.yy */
-
+/* Updated on 23.05.2021 dd.mm.yy */
 #mailList > div:nth-child(1)::before {
-    content: "[19/5/2021] cleaned stuff up a bit, added a better spectate icon. [21/5/2021] Added a new menu window animation. [22/5/2021] Removed the 'Skin': and 'Class': text, added a hover animation to the spectate icon, make the click to play text orange and smaller, made the left menu buttons a circle, customized the chat a bit, fixed the changelog showing in other places (i think)"
+    content: "[19/5/2021] cleaned stuff up a bit, added a better spectate icon. [21/5/2021] Added a new menu window animation. [22/5/2021] Removed the 'Skin': and 'Class': text, added a hover animation to the spectate icon, make the click to play text orange and smaller, made the left menu buttons a circle, customized the chat a bit, fixed the changelog showing in every mail box [23/5/2021] Added a new healthbar that shows LvL"
 }
 
 .shopCard {
@@ -186,15 +185,6 @@ input {
     display: none;
 }
 
-#healthValue {
-    color: #fff;
-    font-size: 25px;
-    will-change: transform;
-    display: inline-block;
-    top: 57px;
-    position: relative;
-}
-
 #maxHP {
     color: rgba(255,255,255,.8);
 }
@@ -207,19 +197,84 @@ input {
 .healthBarSeg {
     width: 60px;
     display: inline-table;
-    border-radius: 0px;
+    border-radius: 100%;
     height: 100%;
     margin-right: -1px;
-
+  /*  clip-path: ellipse(25px 25px); */
 }
+
+#healthBar > div:nth-child(1) > div {
+  background: linear-gradient(90deg, rgba(255,115,0,1) 100%, rgba(254,255,0,1) 100%);
+   clip-path: polygon(0% 0%, 20% 0, 20% 19%, 22% 51%, 24% 79%, 79% 100%, 0 100%);
+}
+#healthBar > div:nth-child(2) > div {
+  background: linear-gradient(90deg, rgba(255,158,0,1) 100%, rgba(254,255,0,1) 100%);
+  clip-path: polygon(8% 26%, 33% 65%, 61% 30%, 30% 100%);
+}
+
+#healthBar > div:nth-child(3) > div {
+  background: linear-gradient(90deg, rgb(255 189 0)0%, rgba(254,255,0,1) 100%);
+  clip-path: polygon(0% 0%, 20% 0, 20% 19%, 22% 51%, 24% 79%, 79% 100%, 0 100%);
+}
+
+#healthBar > div:nth-child(4) > div {
+  background: linear-gradient(90deg, rgb(255 255 0)0%, rgba(254,255,0,1) 100%);
+  clip-path: polygon(8% 26%, 33% 65%, 61% 30%, 30% 100%);
+}
+
+#healthBar > div:nth-child(5) > div {
+  background: linear-gradient(90deg, rgb(203 255 0)0%, rgba(254,255,0,1) 100%);
+  clip-path: polygon(0% 0%, 20% 0, 20% 19%, 22% 51%, 24% 79%, 79% 100%, 0 100%);
+}
+
+#healthBar > div:nth-child(6) > div {
+  background: linear-gradient(90deg, rgb(156 255 0)0%, rgba(254,255,0,1) 100%);
+  clip-path: polygon(8% 26%, 33% 65%, 61% 30%, 30% 100%);
+}
+
+#healthBar > div:nth-child(7) > div {
+  background: linear-gradient(90deg, rgb(203 255 0)0%, rgba(254,255,0,1) 100%);
+  clip-path: polygon(0% 0%, 20% 0, 20% 19%, 22% 51%, 24% 79%, 79% 100%, 0 100%);
+}
+
+#healthBar > div:nth-child(1) {
+  clip-path: polygon(0% 0%, 20% 0, 20% 19%, 22% 51%, 24% 79%, 79% 100%, 0 100%);
+}
+
+#healthBar > div:nth-child(2) {
+  clip-path: polygon(8% 26%, 33% 65%, 61% 30%, 30% 100%);
+}
+
+#healthBar > div:nth-child(3) {
+  clip-path: polygon(0% 0%, 20% 0, 20% 19%, 22% 51%, 24% 79%, 79% 100%, 0 100%);
+}
+
+#healthBar > div:nth-child(4) {
+  clip-path: polygon(8% 26%, 33% 65%, 61% 30%, 30% 100%);
+}
+
+#healthBar > div:nth-child(5) {
+  clip-path: polygon(0% 0%, 20% 0, 20% 19%, 22% 51%, 24% 79%, 79% 100%, 0 100%);
+}
+
+#healthBar > div:nth-child(6) {
+  clip-path: polygon(8% 26%, 33% 65%, 61% 30%, 30% 100%);
+}
+
+#healthBar > div:nth-child(7) {
+  clip-path: polygon(0% 0%, 20% 0, 20% 19%, 22% 51%, 24% 79%, 79% 100%, 0 100%);
+}
+
+
 
 .hpBSeg {
     width: 70px;
     display: inline-block;
     border-radius: 0px;
+   /* clip-path: ellipse(20px 20px); */
     height: 100%;
     box-shadow: 0 0 transparent;
-    margin-right: -1px
+    margin-right: -1px;
 }
 
 #healthValueHolder {
