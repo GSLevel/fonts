@@ -1,7 +1,12 @@
-/* Updated on 23.05.2021 dd.mm.yy */
-#mailList > div:nth-child(1)::before {
-    content: "[19/5/2021] cleaned stuff up a bit, added a better spectate icon. [21/5/2021] Added a new menu window animation. [22/5/2021] Removed the 'Skin': and 'Class': text, added a hover animation to the spectate icon, make the click to play text orange and smaller, made the left menu buttons a circle, customized the chat a bit, fixed the changelog showing in every mail box [23/5/2021] Added a new healthbar that shows LvL"
-}
+/* Updated on 23.05.2021 dd.mm.yy 
+
+[19/5/2021] cleaned stuff up a bit, added a better spectate icon. 
+[21/5/2021] Added a new menu window animation. 
+[22/5/2021] Removed the 'Skin': and 'Class': text, added a hover animation to the spectate icon, make the click to play text orange and smaller, made the left menu buttons a circle, customized the chat a bit, fixed the changelog showing in every mail box 
+[23/5/2021] Added a new healthbar that shows LvL
+[30/5/2021] Changed the font
+*/
+
 
 .shopCard {
   border-radius: 20px;
@@ -35,7 +40,11 @@ input {
 
 @font-face {
     font-family: gamefont;
-    src: url(https://gslevel.github.io/fonts/MilkyNice.ttf);
+    src: url(https://gslevel.github.io/fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
+body {
+ font-weight: 1000
 }
 
 #voiceDisplay {
