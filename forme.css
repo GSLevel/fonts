@@ -5,8 +5,8 @@
 [22/5/2021] Removed the 'Skin': and 'Class': text, added a hover animation to the spectate icon, make the click to play text orange and smaller, made the left menu buttons a circle, customized the chat a bit, fixed the changelog showing in every mail box 
 [23/5/2021] Added a new healthbar that shows LvL
 [30/5/2021] Changed the font
+[04/6/2021] Changed the font again, to Paytone One, moved the healthbar
 */
-
 
 .shopCard {
   border-radius: 20px;
@@ -40,7 +40,7 @@ input {
 
 @font-face {
     font-family: gamefont;
-    src: url(https://gslevel.github.io/fonts/Comfortaa-VariableFont_wght.ttf);
+    src: url(https://gslevel.github.io/fonts/PaytoneOne-Regular.ttf);
 }
 
 body {
@@ -201,6 +201,9 @@ body {
 #healthBar {
     display: inline-block;
     height: 50px;
+    position: fixed;
+    right: 40%;
+    bottom: 200px;
 }
 
 .healthBarSeg {
@@ -209,7 +212,7 @@ body {
     border-radius: 100%;
     height: 100%;
     margin-right: -1px;
-  /*  clip-path: ellipse(25px 25px); */
+    position: initial!important
 }
 
 #healthBar > div:nth-child(1) > div {
@@ -287,7 +290,14 @@ body {
 }
 
 #healthValueHolder {
-    background: transparent
+    background: transparent;
+    position: fixed;
+    right: 48%;
+    bottom: 270px;
+}
+
+.chatMsg {
+    letter-spacing: 1.3px
 }
 
 #chatInput {
