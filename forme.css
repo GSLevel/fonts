@@ -1,11 +1,11 @@
-/* Updated on 23.05.2021 dd.mm.yy 
-
+/*
 [19/5/2021] cleaned stuff up a bit, added a better spectate icon. 
 [21/5/2021] Added a new menu window animation. 
 [22/5/2021] Removed the 'Skin': and 'Class': text, added a hover animation to the spectate icon, make the click to play text orange and smaller, made the left menu buttons a circle, customized the chat a bit, fixed the changelog showing in every mail box 
 [23/5/2021] Added a new healthbar that shows LvL
 [30/5/2021] Changed the font
 [04/6/2021] Changed the font again, to Paytone One, moved the healthbar
+[06/6/2021] Removed the things recommended for new players on the menu, and made it so you have to hover over the "content creators" part to see the featured creators, and streamers.
 */
 
 .shopCard {
@@ -765,10 +765,6 @@ input:checked+.slider {
   background-color: yellow
 }
 
-#streamContainer {
-  display: none;
-}
-
 #instructions {
     font-size: 15px;
     color: #ff450099;
@@ -787,4 +783,50 @@ input:checked+.slider {
     clip-path: polygon(0 0, 85% 8%, 100% 100%, 0% 100%);
     background-color: #ff45003d;
     top: -20px
+}
+
+#streamContainer {
+   transition: all;
+   clip-path: polygon(0% 0, 100% 0, 100% 14%, 0% 14%);
+   animation: streamAnimOut .5s linear;
+   border-radius: 10px
+}
+
+#streamContainer::before {
+    content: "content creators";
+    font-size: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: orangered;
+    top: -9px
+}
+
+@keyframes streamAnim {
+    from {
+        clip-path: polygon(0% 0, 1000% 0, 290% 17%, 1% 20%);
+    }
+
+    to {
+       clip-path: polygon(-590% 0, 203% 0, 43% 200%, 0% 100%);
+    }
+}
+
+@keyframes streamAnimOut {
+    from {
+        clip-path: polygon(-590% 0, 203% 0, 43% 200%, 0% 100%);
+    }
+
+    to {
+       clip-path: polygon(0% 0, 1000% 0, 290% 17%, 1% 20%);
+    }
+}
+
+#streamContainer:hover {
+  animation: streamAnim .5s linear;
+  clip-path: polygon(-590% 0, 203% 0, 43% 200%, 0% 100%);
+}
+
+.youNewDiv {
+    display: none
 }
