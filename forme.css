@@ -8,11 +8,6 @@
 [06/6/2021] Removed the things recommended for new players on the menu, and made it so you have to hover over the "content creators" part to see the featured creators, and streamers.
 */
 
-#instructions::after {
-  content: " ALL CSSES WILL BE AT gslevel.info TOMORROW";
-  color: red!important
-}
-
 .shopCard {
   border-radius: 20px;
   border: none!important;
@@ -45,7 +40,7 @@ input {
 
 @font-face {
     font-family: gamefont;
-    src: url(https://gslevel.github.io/fonts/PaytoneOne-Regular.ttf);
+    src: url(https://gslevel.info/fonts/PaytoneOne-Regular.ttf);
 }
 
 body {
